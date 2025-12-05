@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>团队任务看板</title>
+  <!-- 引入样式文件 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kanban-container">
+    <!-- 待办列 -->
+    <div class="kanban-column">
+      <h2>待办</h2>
+      <div class="task-list" id="todo-list">
+        <!-- 任务卡片将在这里展示（初始可加一个示例） -->
+        <div class="task-card">示例任务：完成UI布局</div>
+      </div>
+    </div>
+
+    <!-- 进行中列 -->
+    <div class="kanban-column">
+      <h2>进行中</h2>
+      <div class="task-list" id="in-progress-list"></div>
+    </div>
+
+    <!-- 已完成列 -->
+    <div class="kanban-column">
+      <h2>已完成</h2>
+      <div class="task-list" id="done-list"></div>
+    </div>
+  </div>
+
+  <!-- 引入交互逻辑文件 -->
+  <script src="app.js"></script>
+</body>
+</html>
